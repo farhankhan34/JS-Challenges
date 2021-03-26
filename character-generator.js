@@ -15,7 +15,8 @@ var charName;
 //testing
 
 function getRandomInt(maxInt) {
-  //Ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+  // Ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+  /* Math.random multiplied with maxInt doesn't guarantee whole numbers. The Math.floor function guarantees whole numbers (i.e. an index from an array when used in Step 2)*/
 
   return Math.floor(Math.random() * Math.floor(maxInt));
   
@@ -26,6 +27,7 @@ function generateName(firstArr, lastArr) {
   // STEP 2 --------------------------------------------------------------------------
   // Create a locally scoped variable called myCharFirstName
   // Set the value of myCharFirstName randomly from the charFirstNames array
+
 
    var nameIndex = getRandomInt(charFirstNames.length -1);
    var myCharFirstName = charFirstNames[nameIndex];
