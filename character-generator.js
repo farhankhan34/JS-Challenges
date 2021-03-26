@@ -12,6 +12,8 @@ var charName;
 // This function should accept one input parameter called maxInt
 // The function should return a random whole integer between 1 and the value of maxInt
 
+//testing
+
 function getRandomInt(maxInt) {
   //Ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
